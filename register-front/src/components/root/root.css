@@ -1,0 +1,39 @@
+.root {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  background-color: purple;
+  width: 100%;
+  height: 5vh;
+}
+
+.content {
+  width: 360px;
+  height: 93vh;
+  margin: 0px auto;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  background-color: white;
+}
+
+.bottom {
+  background-color: purple;
+  width: 100%;
+  height: 2vh;
+  align-self: flex-end;
+}
+
+@media all and (max-width: 360px) {
+  .content {
+    min-width: 10%;
+  }
+}
+
+@media all and (max-device-width: 360px) {
+  .content {
+    max-width: 100%;
+  }
+}
