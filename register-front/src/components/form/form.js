@@ -56,12 +56,24 @@ export default class Form extends React.Component {
 
   render() {
     return(
-      <form>
-        <Field name='name' onValueChange={this.updateNameState}/>
-        <Field name='email' onValueChange={this.updateEmailState}/>
-        <Field name='password' onValueChange={this.updateNamePassword}/>
-        <input type='button' value='enviar' class='submit-input' onClick={this.submit}/>
-      </form>
+      <div>
+        <div>
+        <h1>title</h1>
+        <p>
+          description
+        </p>
+        </div>
+        <form>
+          <div class='form-content'>
+            <Field name='name' onValueChange={this.updateNameState}/>
+            <Field name='email' onValueChange={this.updateEmailState}/>
+            <Field name='password' onValueChange={this.updateNamePassword}/>
+          </div>
+          <div class='form-bottom'>
+            <input type='button' value='enviar' class='submit-input' onClick={this.submit}/>
+          </div>
+        </form>
+      </div>
     );
   }
 }

@@ -9,14 +9,17 @@
   height: 5vh;
 }
 
-.content {
+.content-container {
   width: 360px;
   height: 93vh;
-  margin: 0px auto;
-  padding: 0;
-  display: flex;
-  justify-content: center;
+  margin: 0;
   background-color: white;
+  margin: 0 auto;
+}
+
+.content {
+  min-height: 100%;
+  padding: 0 5px;
 }
 
 .bottom {
@@ -28,12 +31,12 @@
 
 @media all and (max-width: 360px) {
   .content {
-    min-width: 10%;
+    /*min-width: 10%;*/
   }
 }
 
 @media all and (max-device-width: 360px) {
   .content {
-    max-width: 100%;
+    /*max-width: 100%;*/
   }
 }

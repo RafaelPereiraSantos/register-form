@@ -1,14 +1,13 @@
 import React from 'react';
-import Form from './components/form/form';
 import Root from './components/root/root';
-import './components/app.css';
+import Form from './components/form/form';
 
 function App() {
   return (
     <div className="App">
-      <Root>
-        <Form/>
-      </Root>
+    <Root>
+      <Form/>
+    </Root>
     </div>
   );
 }

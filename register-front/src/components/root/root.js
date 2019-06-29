@@ -10,10 +10,14 @@ export default class Root extends React.Component {
     return(
       <div class='root'>
         <div class='header'>
-          header
+           header
         </div>
-        <div class='content'>
-          {this.props.children}
+        <div class='body'>
+          <div class='content-container'>
+            <div class='content'>
+              {this.props.children}
+            </div>
+          </div>
         </div>
         <div class='bottom'>
           bottom

@@ -1,5 +1,5 @@
 form {
-  padding: 0 5px;
+  padding: 0;
   border: none;
   background: none;
   width: 100%;
@@ -10,14 +10,29 @@ form {
   font-weight: bold;
 }
 
+.form-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-bottom {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+}
+
 .submit-input {
   background-color: purple;
   min-height: 35px;
-  border-radius: 13px;
+  border-radius: 20px;
   font-weight: bold;
   color: white;
 }
 
 .submit-input:not(:focus) {
-  border-radius: 16px;
+  border-radius: 20px;
+}
+
+.submit-input:active {
+  background-color: pink
 }
